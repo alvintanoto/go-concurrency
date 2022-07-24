@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	// tambahin parameter kedua untuk menghindari deadlock
+	// tambahin parameter kedua (capacity) untuk menghindari deadlock
 	c := make(chan string, 2)
 	c <- "hello"
 	c <- "world"
